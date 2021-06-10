@@ -9,6 +9,15 @@ module.exports = {
   ],
   globals: {
     context: 'readonly',
+    React: true,
+    google: true,
+    mount: true,
+    mountWithRouter: true,
+    shallow: true,
+    shallowWithRouter: true,
+    expect: true,
+    jsdom: true,
+    JSX: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -33,6 +42,7 @@ module.exports = {
   rules: {
     'import/extensions': 'off',
     'no-use-before-define': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     indent: ['error', 2],
     'no-trailing-spaces': 'error',
